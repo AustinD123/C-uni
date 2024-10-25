@@ -24,7 +24,7 @@ int isEmpty(struct queue *pq) {
 }
 
 int isFull(struct queue *pq) {
-    return (pq->rear == max - 1 && pq->front==0)||(pq->front==pq->rear+1) ; 
+    return ((pq->rear +1)/max==pq->front) ; 
 }
 
 void enqueue(struct queue *pq, int ele) { 
