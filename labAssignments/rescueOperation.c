@@ -228,7 +228,6 @@ void update_zone(int zone_id) {
 }
 
 
-/*done by atharva gaikwad*/
 void update_team(int team_id) {
     struct Team* current = first_team;
     while (current != NULL && current->team_id != team_id) {
